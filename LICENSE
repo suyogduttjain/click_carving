@@ -1,0 +1,24 @@
+Click Carving: Segmenting Objects in Videos with Point Clicks v1.0
+================================================================================
+
+Suyog Jain and Kristen Grauman
+suyog@cs.utexas.edu
+
+This software was developed under 64-bit Linux with Matlab R2014b/R2015a.
+
+
+If you use this software for academic research, please cite [1].
+
+All software with the exception of the contents of the folder 'external_libs/'
+are released as free software for non-commercial applications under the terms of
+the GNU General Public License version 3 (GPLv3), see 
+<http://www.gnu.org/licenses/>, which is also noted in each individual file. For
+commercial applications, contact the author for licensing options.
+
+This software uses components from [2], which are included in
+'external_libs'. Please check their individual release licences
+
+[1] Suyog Jain, Kristen Grauman, “Click Carving: Segmenting Objects in Video with Point Clicks”, Fourth AAAI Conference on Human Computation and Crowdsourcing (HCOMP), 2016. 
+
+[2] Pablo Arbelaez, Jordi Pont-Tuset, Jonathan T. Barron, Ferran Marques, Jitendra Malik, "Multiscale Combinatorial Grouping",  Computer Vision and Pattern Recognition (CVPR), 2014.
+
