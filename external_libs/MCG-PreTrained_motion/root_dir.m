@@ -14,7 +14,9 @@
 % Please consider citing the paper if you use this code.
 % ------------------------------------------------------------------------
 function root_dir = root_dir()
-if strcmp(computer(), 'GLNXA64')
-   root_dir = '/scratch/vision/suyog/active_annotation/external_libs/MCG-PreTrained/';
-end
+
+%if strcmp(computer(), 'GLNXA64')
+%   root_dir = '/scratch/vision/suyog/active_annotation/external_libs/MCG-PreTrained/';
+%end
+
 end

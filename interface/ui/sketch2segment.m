@@ -53,6 +53,8 @@ function sketch2segment_OpeningFcn(hObject, eventdata, handles, varargin)
 % varargin   unrecognized PropertyName/PropertyValue pairs from the
 %            command line (see VARARGIN)
 set(handles.figure1, 'Name', 'Click Carving');
+%set(handles.figure1, 'units', 'normalized', 'position', [0 0 1 1])
+
 fdata = varargin{1};
 disp('Initializing');
 fdata.masks_votes = zeros(size(fdata.lut));

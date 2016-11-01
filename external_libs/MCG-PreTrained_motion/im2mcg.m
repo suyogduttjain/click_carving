@@ -38,7 +38,7 @@
 %  DEMO:
 %  - See demos/demo_im2mcg.m
 % ------------------------------------------------------------------------
-function [candidates, ucm2] = im2mcg(image,edges,mode,compute_masks)
+function [candidates, ucm2] = im2mcg(root_dir,image,edges,mode,compute_masks)
 if nargin<3
     mode = 'fast';
 end
