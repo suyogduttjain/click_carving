@@ -26,6 +26,7 @@ The positive clicks are shown in green, the negative ones are shown in red.
 
 After each click, you should see an updated reranking. 
 
+Please note that the GUI is developed using Matlab, which doesn't work well with different screen sizes. However it should be work well for reasonable screen sizes (>15 inch screens).
 
 [1] Suyog Jain, Kristen Grauman, “Click Carving: Segmenting Objects in Video with Point Clicks”, Fourth AAAI Conference on Human Computation and Crowdsourcing (HCOMP), 2016. 
 
