@@ -1,5 +1,4 @@
-Click Carving: Segmenting Objects in Videos with Point Clicks v1.0
-================================================================================
+# Click Carving: Segmenting Objects in Videos with Point Clicks 
 
 Suyog Jain and Kristen Grauman
 suyog@cs.utexas.edu
@@ -12,9 +11,9 @@ This is a image only version of the algorithm, hence we only use the appearance 
 
 The MCG code is included in the external_libs folder, it was compiled on a 64-bit linux machine, you might need to recompile it for your purpose. 
 
-==========
-Interface
-==========
+
+# Interface
+
 Please check the video demo on the wesbite for a quick overview of the interface:
 http://vision.cs.utexas.edu/projects/clickcarving/
 
