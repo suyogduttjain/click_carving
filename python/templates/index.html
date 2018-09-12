@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Click Carving">
+
+    <title>Click Carving</title>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="pobj.css">
+  
+  </head>
+
+  <body>
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1><a href="/">Click Carving</a></h1>
+      </div>
+        
+      <hr>
+      <div class="media">
+	      <a class="pull-left" href="#"><img id="source_img" class="media-object" 
+            width={{ response['im_width'] }} height={{response['im_height'] }} src={{ response['input_img'] }}></a>
+      </div>
+
+      <hr>
+
+      {% if 'ranked' in response %}
+        <div class="row">
+        {% for item in response['ranked']%}
+            
+        <div class="col-md-3">
+	      <img class="media-object" width={{ 0.4*response['im_width'] }} 
+                height={{ 0.4*response['im_height'] }} src={{ item }}></a>
+        </div>
+        
+        {% if loop.index is divisibleby 4 %}
+            </div>
+            <hr>
+            <div class="row paddingbottom">
+        {% endif %}
+
+        {%- endfor %}
+        </div>
+      {% endif %}
+
+
+               
+      <form role="form" action="click_carving" method="get" id="cc_form">
+            <input type="hidden" id="image_clicks" name="image_clicks" value="">
+      </form>
+
+      <br>
+            
+      {% if show_error %}
+      <hr>
+      <h3> Server threw an error, please try another URL. </h3>
+      <hr>
+      {% endif %}
+      
+      <script>      
+          $(document).ready(function() {
+            $("#source_img").on("click", function(event) {
+            var x = event.pageX - this.offsetLeft;
+            var y = event.pageY - this.offsetTop;
+            
+            info = "x:"+x
+            info += '|y:'+y
+            info += '|t:'+event.button
+            document.getElementById('image_clicks').value = info
+            document.forms["cc_form"].submit();
+            });
+            });     
+          
+          $(document).ready(function() {
+            $("#source_img").on("contextmenu", function(event) {
+            var x = event.pageX - this.offsetLeft;
+            var y = event.pageY - this.offsetTop;
+            
+            info = 'x:'+x
+            info += '|y:'+y
+            info += '|t:'+event.button
+            document.getElementById('image_clicks').value = info
+            document.forms["cc_form"].submit();
+            });
+            });     
+
+      
+      </script> 
+
+      <script type="text/javascript" language="javascript">
+        $(function() {
+            $(this).bind("contextmenu", function(e) {
+                e.preventDefault();
+            });
+            });
+      </script>
+
+ </body>
+</html>

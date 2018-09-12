@@ -1,0 +1,25 @@
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+line-height:1.5em;
+color: #232323;
+-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-family: Times, serif;
+    line-height:1.5em;
+    border-bottom: 1px solid #ccc;
+}
+
+.row.no-pad {
+      margin-right:0;
+        margin-left:0;
+}
+.row.no-pad > [class*='col-'] {
+      padding-right:0;
+        padding-left:0;
+}
+
+
+
+
