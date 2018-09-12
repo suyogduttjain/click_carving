@@ -6,7 +6,7 @@ suyog@cs.utexas.edu
 The matlab folder contains the matlab implementation.
 The python folder contains python implementation.
 
-Please check the respected readme files inside each folder for details on how to run the code.
+Please check the respective readme files inside each folder for details on how to run the code.
 
 For video propagation please download the code from here [link](http://www.cs.utexas.edu/~suyog/code_supervoxels.tar)
 
