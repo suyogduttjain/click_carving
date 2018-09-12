@@ -3,8 +3,8 @@
 Suyog Jain and Kristen Grauman
 suyog@cs.utexas.edu
 
-This python implementation assumes that the proposals have been pre-computed. We have used DeepLab from Facebook to
-compute the proposals. Please refer the script inside the deeplab folder for more details.
+This python implementation assumes that the proposals have been pre-computed. We have used DeepMask from Facebook to
+compute the proposals. Please refer the script inside the deepmask folder for more details.
 
 Please download some sample images/video frames along with pre-computed proposals from the following link:
 https://drive.google.com/open?id=1XK67Y-dWykATeMHh1K0rpAuZgQRNACOs
